@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Taks from "./components/Tasks";
+import Tasks from "./components/Tasks";
+
 import "./App.css";
 
 const App = () => {
