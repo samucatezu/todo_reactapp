@@ -5,11 +5,11 @@ import { useHistory } from "react-router-dom";
 import "./Task.css";
 
 const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
-  // const history = useHistory();
+  const history = useHistory();
 
-  // const handleTaskDetailsClick = () => {
-  //   history.push(`/${task.title}`);
-  // };
+  const handleTaskDetailsClick = () => {
+    history.push(`/${task.title}`);
+  };
 
   return (
     <div
@@ -20,7 +20,7 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
         {task.title}
       </div>
 
-      {/* <div className="buttons-container">
+      <div className="buttons-container">
         <button
           className="remove-task-button"
           onClick={() => handleTaskDeletion(task.id)}
@@ -33,7 +33,7 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
         >
           <CgInfo />
         </button>
-      </div> */}
+      </div>
     </div>
   );
 };
